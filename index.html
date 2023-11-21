@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive OTP verification form with random code generation using HTML, CSS, and JavaScript. Showcase of front-end development skills for portfolios." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script defer src="script.js"></script>
+    <title>OJ-OTP</title>
+    <link rel="icon" type="image/x-icon" href="AM.webp" />
+  </head>
+  <body>
+    <div class="otp-container">
+      <p>Random OTP Code for Testing:</p>
+      <span class="generated-code"> </span>
+    </div>
+    <section class="main-container">
+      <ion-icon class="refresh" name="refresh-circle-outline"></ion-icon>
+      <h2>Please Verify your Email Address</h2>
+      <p class="description">
+        A <span>4-digit</span> code has been sent to your email <strong>p***@***.com. </strong> <br />
+        Please enter the code below to <em>verify</em> your email address.
+      </p>
+
+      <form action="/index.html" class="form">
+        <div class="card-1">
+          <label for="input-1"> <input type="number" id="number-1" class="input input-1" min="1" max="9" maxlength="1" autocomplete="off" /></label>
+        </div>
+        <div class="card-2">
+          <label for="input-2"> <input type="number" id="number-2" class="input input-2" min="1" max="9" autocomplete="off" /></label>
+        </div>
+        <div class="card-3">
+          <label for="input-3"> <input type="number" min="1" max="9" id="number-3" class="input input-3" autocomplete="off" /></label>
+        </div>
+        <label for="input-4"> <input type="number" id="number-4" class="input input-4" min="1" max="9" autocomplete="off" /></label>
+        <div class="card-4"></div>
+      </form>
+      <button class="hidden" type="submit" id="submit">Verify</button>
+    </section>
+    <div class="slider-thumb"></div>
+    <div class="slider-thumb-2"></div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
